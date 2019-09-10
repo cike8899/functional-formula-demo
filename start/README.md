@@ -1,0 +1,1 @@
+代码来自 [简明 JavaScript 函数式编程——入门篇](https://juejin.im/post/5d70e25de51d453c11684cc4#heading-27)
