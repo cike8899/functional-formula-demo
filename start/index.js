@@ -22,9 +22,9 @@ const { expectData } = require("./expectData");
 // :: String -> Number -> Object -> Boolean
 const propLt = (p, c) =>
   R.pipe(
-    R.prop(p),
-    R.lt(R.__, c)
-  );
+    R.prop(p), // const a=(obj)=>obj.p
+    R.lt(R.__, c) //const b= (val)=>val<c
+  ); // (value)=> b(a(value)) 也就是 (value)=>value.p<c
 // :: Object ->  Boolean
 const ageUnder18 = propLt("age", 18);
 
